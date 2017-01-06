@@ -1,0 +1,22 @@
+{
+  "name": "doctor-lookup",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Caitlin Ashtari"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "materialize": "^0.97.8"
+  }
+}
