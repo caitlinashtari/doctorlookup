@@ -1,0 +1,14 @@
+$white: #fff;
+$grey: #737373;
+
+nav {
+  .nav-wrapper {
+    background-color: $white;
+    .brand-logo {
+      color: $grey;
+    }
+  }
+  ul a {
+    color: $grey;
+  }
+}
