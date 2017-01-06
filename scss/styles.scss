@@ -6,9 +6,14 @@ nav {
     background-color: $white;
     .brand-logo {
       color: $grey;
+      padding-left: 20px;
     }
   }
   ul a {
     color: $grey;
   }
+}
+
+.jumbotron {
+  text-align: center;
 }
