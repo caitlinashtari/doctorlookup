@@ -1,14 +1,12 @@
 var Doctor = require('./../js/doctor.js').doctorModule;
 var AllDoctors = require('./../js/doctor.js').allModule;
 
-var newDoctor = function(img, firstName, lastName, title, specialty, rating) {
-  var doctor = Doctor.new(img, firstName, lastName, title, specialty, rating);
-  AllDoctors.doctors.push(doctor);
-};
-
 $(document).ready(function(){
-  var doctors = Doctor.getDoctor('toothache', newDoctor);
-  console.log(doctors);
+  var doctor = new Doctor();
+  var allDoctors = new AllDoctors();
+  doctor.getDoctor('toothache', doctor, allDoctors);
+  console.log(doctor);
+  console.log(allDoctors);
 });
 // var displayDoctors = function(img, firstName, lastName, title, specialty, rating) {
 //   var image = ('<img src=' + img + '>');
