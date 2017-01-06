@@ -1,9 +1,6 @@
 var Doctor = require('./../js/doctor.js').doctorModule;
 
-var allDoctors = [];
-
 var displayDoctors = function(img, firstName, lastName, title, specialty, rating) {
-  allDoctors.push({img, firstName, lastName, title, specialty, rating});
   var image = ('<img src=' + img + '>');
   $('#doctor-ul').append("<li class='collection-item'>" + image + " " + firstName + " " + lastName + ", " + title + " " + specialty);
 };
@@ -17,7 +14,6 @@ $(document).ready(function(){
     currentDoctorObject.getDoctor(medicalIssue, displayDoctors);
     $('.collection-header').show();
     medicalIssue = $('#illness-input').val("");
-    console.log(allDoctors);
   });
 
 });
