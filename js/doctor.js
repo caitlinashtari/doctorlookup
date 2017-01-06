@@ -11,6 +11,6 @@ Doctor.prototype.getDoctor = function(medicalIssue, displayFunction) {
       }).fail(function(error){
         console.log(error.message);
       });
-  }
+  };
 
 exports.doctorModule = Doctor;
