@@ -1,12 +1,6 @@
 var apiKey = require('./../.env').apiKey;
 
-function Doctor (img, firstName, lastName, title, specialty, rating){
-  this.img = img;
-  this.firstName = firstName;
-  this.lastName = lastName;
-  this.title = title;
-  this.specialy = specialty;
-  this.rating = rating;
+function Doctor (){
 }
 
 Doctor.prototype.getDoctor = function(medicalIssue, displayFunction) {
