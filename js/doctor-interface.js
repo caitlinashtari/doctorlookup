@@ -6,6 +6,7 @@ $(document).ready(function(){
   $('#find-doctor').click(function(){
     var medicalIssue = $('#illness-input').val();
     currentDoctorObject.getDoctor(medicalIssue);
+    $('.collection-header').show();
   });
 
 });
