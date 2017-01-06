@@ -1,12 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Ubuntu');
+//fonts
+$ubuntu: 'Ubuntu', sans-serif;
+$oswald: 'Oswald', sans-serif;
+
+//colors
 $white: #fff;
 $grey: #737373;
+$purple: #63107f;
+$whiteish: #f4f5f7;
 
 nav {
   .nav-wrapper {
     background-color: $white;
     .brand-logo {
-      color: $grey;
+      color: $purple;
       padding-left: 20px;
+      font-family: $ubuntu;
+      font-style: italic;
+      text-shadow: 2px 1px $purple;
     }
   }
   ul a {
@@ -16,8 +27,21 @@ nav {
 
 .jumbotron {
   text-align: center;
+  background-image: url('/jumbotronImg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  h1 {
+    font-family: $oswald;
+    color: $whiteish;
+    text-shadow: 2px 2px $purple;
+  }
 }
 
 .collection-header {
   display: none;
+}
+
+button#find-doctor.btn {
+  background-color: $grey;
+  margin-bottom: 10px;
 }
