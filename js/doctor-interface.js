@@ -1,8 +1,8 @@
 var Doctor = require('./../js/doctor.js').doctorModule;
 
-var displayDoctors = function(img, firstName, lastName, title, bio) {
+var displayDoctors = function(img, firstName, lastName, title, specialty) {
   var image = ('<img src=' + img + '>');
-  $('#doctor-ul').append("<li class='collection-item'>" + image + " " + firstName + " " + lastName + ", " + title + "<p>" + bio + "</p>");
+  $('#doctor-ul').append("<li class='collection-item'>" + image + " " + firstName + " " + lastName + ", " + title + " " + specialty);
 };
 
 $(document).ready(function(){
